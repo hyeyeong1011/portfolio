@@ -61,7 +61,7 @@ header nav ul li a{
 header nav ul li:hover a{text-decoration: underline;}
 
 /* 네비게이션 스크롤 */
-header.scroll{ background: #505050b3;}
+header.scroll{ background: #505050;}
 
 
 /* 타이핑 텍스트 */
@@ -408,7 +408,7 @@ article h2{
 /* footer */
 footer{
     padding: 50px 0;
-    background-color: #232323;
+    background-color: #505050;
     color: #fff;
     font-size: 14px;
     line-height: 30px;
