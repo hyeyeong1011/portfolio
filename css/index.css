@@ -157,6 +157,7 @@ article h2{
     font-size: 24px;
     transform: rotate(-20deg);
 }
+.no-cssreflections #about .box i{transform: rotate(0);}
 #about .box img{
     width: 400px;
     position: absolute;
