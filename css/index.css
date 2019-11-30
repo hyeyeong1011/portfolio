@@ -61,7 +61,7 @@ header nav ul li a{
 header nav ul li:hover a{text-decoration: underline;}
 
 /* 네비게이션 스크롤 */
-header.scroll{ background: #505050;}
+header.scroll{ background: rgba(80, 80, 80, 0.7);}
 
 
 /* 타이핑 텍스트 */
