@@ -58,7 +58,6 @@ $(function(){
     // top버튼
     $(window).scroll(function(){
         var scrollTop=$(this).scrollTop();
-        console.log(scrollTop);
         if(scrollTop>200){
             $('#top').addClass('active');
         }else{
