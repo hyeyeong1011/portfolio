@@ -107,8 +107,27 @@ $(function(){
     });
         
     $('.pop_close').click(function(){
+
         $('.pop_bg').css('display','none'); //팝업창 뒷배경 display none
         $('.pop').css('display','none'); //팝업창 display none
         $('body').css('overflow','auto');//body 스크롤바 생성
     });
+
+
+    // 프로그레스 바
+    $(window).scroll(function(){
+        
+        var scrollTop=$(this).scrollTop();
+        var skills=$('#skills').offset().top-200;
+        
+        if(scrollTop>=skills){
+            $('.progress-bar').each(function(){
+
+                $(this).find('.bar').animate({
+                    width:$(this).data('percent')
+                },2000);
+            })
+        }
+    });
+
 })
