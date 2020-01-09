@@ -84,8 +84,7 @@ header.scroll{
     animation-duration: 0.3s; 
     animation-iteration-count: infinite; 
     text-align: right;
-    font-size: 18px;
-    font-weight: normal;
+    font-size: 16px;
     letter-spacing: 1px;
 } 
 @keyframes cursor{ 
@@ -155,7 +154,9 @@ article h2{
 /* about me */
 #about .box{
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 150px;
+    overflow: hidden;
 }
 #about .box img{
     margin-top: 20px;
@@ -167,7 +168,7 @@ article h2{
 #about .box i{
     position: relative;
     top: 400px;
-    left: 110px;
+    left: 100px;
     font-size: 24px;
     transform: rotate(-20deg);
 }
@@ -175,10 +176,15 @@ article h2{
     transform: rotate(0);
 }
 #about .box img{
-    width: 400px;
+    width: 360px;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    top: 40px;
+}
+#about .box .top-wrap{
+    text-align: center;
+    float: left;
+    width: 35%;
 }
 #about .box img.on{
     opacity: 0;
@@ -187,12 +193,19 @@ article h2{
 #about img.on:hover{
     opacity: 1;
 }
-#about .box p{
+#about .box .top-wrap p{
     color: #a6a6a6;
     padding-top: 15px;
 }
+#about .box .bottom-wrap{
+    text-align: right;
+    float: left;
+    width: 65%;
+    padding: 0 15px 0 50px;
+    box-sizing: border-box;
+}
 #about .box dl{
-    margin-top: 50px;
+    margin: 60px 0;
 }
 #about .box dt{
     margin-bottom: 20px;
@@ -201,121 +214,117 @@ article h2{
     color: #e6b8a7;
 }
 #about .box dd{
+    font-weight: bold;
+    font-size: 15px;
+    color: #666;
     line-height: 26px;
 }
-#about .box2{
-    overflow: hidden;
-    border-top: 2px solid #eee;
-    padding: 150px 50px 50px 50px;
-}
-#about .box2 .left img{
-    width: 180px;
-    margin-right: 30px;
-}
-#about .box2 .left .bottom{
-    display: inline-block;
-}
-#about .box2 .left .bottom li{
-    height: 72px;
-    margin-top: 30px;
-    padding-left: 84px;
-    box-sizing: border-box;
-}
-#about .box2 .left .bottom li:first-child{
-    background: url(../img/icon_graduation.png) no-repeat left center;
-    background-size: contain;
-}
-#about .box2 .left .bottom li:last-child{
-    background: url(../img/icon_education.png) no-repeat left center;
-    background-size: contain;
-}
-#about .box2 .left{
-    float: left;
-    width: 50%;
-    padding-left: 30px;
-}
-#about .box2 .right{
-    float: left;
-    width: 40%;
-    padding: 0 0 20px 20px;
-}
-#about .box2 .right h3{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    margin-bottom: 5px;
-    margin-top: 20px;
-    font-weight: normal;
-    font-size: 22px;
+#about .box .motto h3{
+    font-size: 18px;
+    font-weight: bold;
     color: #e6b8a7;
 }
-#about .box2 .right p:first-of-type{
-    text-align: center;
+#about .box .motto p:first-of-type{
+    color: #a6a6a6;
     font-size: 14px;
-    margin-bottom: 40px;
-    color: #a2a2a2;
+    margin: 5px 0 20px;
 }
-#about .box2 .right p:last-child{
-    text-align: justify;
-    line-height: 3em;
-}
-#about .top{
-    display: inline-block;
-    vertical-align: super;
-}
-#about .top li{
-    display: block;
-    line-height: 42px;
-}
-#about .top li span{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: normal;
-}
-#about .top li .small-name{
-    font-size: 12px;
+#about .box .motto p:last-of-type{
+    font-weight: bold;
+    line-height: 26px;
+    font-size: 15px;
     color: #666;
-    vertical-align: bottom;
 }
-#about .top .name span{
-    margin-left: 11px;
+
+#about .box2{
+    border-top: 2px solid #eee;
+    padding-top: 150px;
 }
-#about .top .birth span{
-    margin-left: 11px;
+#about .box2 .wrap img{
+    width: 180px;
 }
-#about .top .phone span{
-    margin-left: 9px;
+#about .box2 .wrap .right ul{
+    border-right: 3px solid #e6b8af;
+    color: #666;
+    padding-right: 12px;
+    margin-top: 190px;
 }
-#about .top .mail span{
-    margin-left: 9px;
+#about .box2 .wrap .right ul li:first-of-type{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
 }
-#about .top .add span{
-    margin-left: 13px;
+#about .box2 .wrap{
+    overflow: hidden;
 }
-#about .top .uni span{
-    margin-left: 5px;
+#about .box2 .wrap .left{
+    float: left;
+    width: 80%;
+    text-align: left;
+}
+#about .box2 .wrap .right{
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+#about .box2 .wrap .left dl{
+    margin-bottom: 70px;
+}
+#about .box2 .wrap .left dl dt{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#about .box2 .wrap .left dl dt span{
+    width: 3px;
+    background: #e6b8a7;
+    height: 18px;
+    display: inline-block;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+#about .box2 .wrap .left dl dd{
+    color: #666;
+    line-height: 28px;
+}
+#about .box2 .wrap .left .edu{
+    margin-bottom: 15px;
+}
+#about .box2 .wrap .left .date{
+    font-weight: bold;
+    font-size: 14px;
 }
 
 
 /* skills */
-#skills .out{
-    width: 100%;
+#skills .wrap{
+    overflow: hidden;
+    margin-top: 60px;
+}
+#skills .wrap > div{
+    float: left;
+    width: 33.33%;
     text-align: center;
-    margin-top: 50px;
 }
-#skills .in{
-    display: inline-block;
+#skills .wrap > div > span{
+    display: block;
+    font-size: 14px;
+    color: #a0a0a0;
 }
-#skills .circle{
+#skills .wrap .progress-bar{
     position: relative;
-    margin-right: 80px;
+    border-radius: 10px;
+    background: #eee;
+    height: 10px;
+    margin: 10px 80px 100px;
 }
-#skills .circle:last-of-type{margin-right: 0;}
-#skills .circle p{
-    position: absolute;
-    font-size: 16px;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: bold;
+#skills .wrap .progress-bar .bar{
+    display: block;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    background: #41537d;
 }
 
 
