@@ -407,6 +407,15 @@ article h2{
 #portfolio .fourth .circle3{
     background: #665759;
 }
+#portfolio .fifth .circle1{
+    background: #b5121b;
+}
+#portfolio .fifth .circle2{
+    background: #4f4c4b;
+}
+#portfolio .fifth .circle3{
+    background: #f7f7f7;
+}
 #portfolio .wrap h3{
     font-size: 24px;
 }
@@ -443,8 +452,8 @@ article h2{
 #portfolio .wrap .txt-box a:first-of-type{
     margin: 20px 0 0 0;
 }
-#portfolio .second .txt-box a, 
-.third .txt-box a, .fourth .txt-box a{
+#portfolio .second .txt-box a, .third .txt-box a, 
+.fourth .txt-box a, .fifth .txt-box a{
     width: 70%;
     display: inline-block;
     box-sizing: border-box;
