@@ -14,15 +14,6 @@ li{list-style: none;}
 input{outline: none;}
 
 
-/* 배경이미지 꽉 차게 */
-#home{
-    background: url(../img/bg.jpg) no-repeat center center; 
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    margin-bottom: 50px;
-}
-
 
 /* 네비게이션 */
 header{
@@ -67,37 +58,24 @@ header nav ul li a{
 header nav ul li:hover a{
     text-decoration: underline;
 }
-
-/* 네비게이션 스크롤 */
 header.scroll{ 
     background: rgba(80, 80, 80, 0.7);
 }
 
 
-/* 타이핑 텍스트 */
-#home p.typing-txt{
-    display: none;
+/* home */
+#home{
+    background: url(../img/bg.jpg) no-repeat center center; 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-bottom: 50px;
 }
-#home .typing {  
-    display: inline-block; 
-    animation-name: cursor; 
-    animation-duration: 0.3s; 
-    animation-iteration-count: infinite; 
-    text-align: right;
-    font-size: 16px;
-    letter-spacing: 1px;
-} 
-@keyframes cursor{ 
-    0%{border-right: 1px solid #fff} 
-    50%{border-right: 1px solid #000} 
-    100%{border-right: 1px solid #fff} 
-}
-
 #home .txt{
     position: absolute;
     top: 50%;
-    left: 35%;
-    transform: translate(-65%,-50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
     text-align: center;
 }
 #home .txt h1{
@@ -110,14 +88,44 @@ header.scroll{
     display: block;
     font-size: 32px;
     font-weight: normal;
-    line-height: 50px;
+    line-height: 60px;
 }
-#home .wrap{
+#home .icon-scroll, .icon-scroll::before{
     position: absolute;
-    right: -590px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
 }
+#home .icon-scroll{
+    width: 40px;
+    height: 70px;
+    margin-left: -20px;
+    top: 90%;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 2px #fff;
+    border-radius: 25px;
+}
+#home .icon-scroll::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+}
+@keyframes scroll{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(46px)
+    }
+}
+
+
 
 /* article 공통 */
 article{
@@ -133,6 +141,7 @@ article h2{
     border-bottom: 10px solid #f7dc8b;
     display: inline-block;
 }
+
 
 /* top버튼 */
 #top{
@@ -565,7 +574,6 @@ article h2{
     padding-top: 50px;
     text-decoration: underline;
 }
-
 
 
 
