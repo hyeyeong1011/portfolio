@@ -112,7 +112,7 @@ $(function(){
 
 
     // 팝업창 more 버튼
-    $('.pop .inner > a').click(function(e){
+    $('.pop .inner > a').not('.hollys .inner > a').click(function(e){
 
         e.preventDefault();
 
