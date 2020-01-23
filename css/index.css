@@ -223,8 +223,7 @@ article h2{
     color: #e6b8a7;
 }
 #about .box dd{
-    font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
     color: #666;
     line-height: 26px;
 }
@@ -239,9 +238,8 @@ article h2{
     margin: 5px 0 20px;
 }
 #about .box .motto p:last-of-type{
-    font-weight: bold;
     line-height: 26px;
-    font-size: 15px;
+    font-size: 14px;
     color: #666;
 }
 
