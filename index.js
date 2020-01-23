@@ -110,4 +110,16 @@ $(function(){
         }
     })
 
+
+    // 팝업창 more 버튼
+    $('.pop .inner > a').click(function(e){
+
+        e.preventDefault();
+
+        $('.sorry').fadeIn(function(){
+            $(this).delay(800).fadeOut();
+        });
+
+    })
+
 })
