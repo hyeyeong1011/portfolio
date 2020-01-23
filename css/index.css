@@ -14,6 +14,7 @@ li{list-style: none;}
 input{outline: none;}
 
 
+
 /* 네비게이션 */
 header{
     position: fixed;
@@ -490,19 +491,16 @@ article h2{
     transition: 0.5s;
 }
 
-#portfolio .pop{
-    top: 0px;
+#portfolio .pop {
     position: fixed;
     background: #fff;
     border: 3px solid #dedede;
-    box-sizing: border-box;
-    width: 60%;
-    height: 90%;
     display: none;
     z-index: 1111;
-    left: 0;
-    margin-left: 20%;
-    margin-top: 3%;
+    width: 1000px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 25px;
 }
 #portfolio .pop_container{
@@ -522,6 +520,7 @@ article h2{
 #portfolio .pop .inner{
     padding: 60px;
     text-align: left;
+    position: relative;
 }
 #portfolio .pop .inner i{
     font-size: 25px;
@@ -541,15 +540,41 @@ article h2{
     vertical-align: sub;
 }
 #portfolio .pop .inner h4{
-    margin-bottom: 10px;
-    font-size: 20px;
+    margin-bottom: 5px;
+    font-size: 16px;
 }
-#portfolio .pop .inner p{
+#portfolio .pop .inner p, #portfolio .pop .inner ul, #portfolio .pop .inner div{
     margin-bottom: 30px;
     line-height: 26px;
 }
 #portfolio .pop .inner ul li{
     line-height: 26px;
+}
+#portfolio .pop .inner > a{
+    border: 1px solid;
+    width: 150px;
+    display: inline-block;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+#portfolio .pop .inner .sorry{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 250px;
+    height: 80px;
+    font-size: 14px;
+    border: 2px solid #e6b8a7;
+    line-height: 80px;
+    text-align: center;
+    color: #e6b8a7;
+    background: #fff;
+    display: none;
 }
 
 
