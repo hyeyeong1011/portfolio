@@ -6,11 +6,9 @@ $(function(){
         var scrollTop=$(this).scrollTop();
 
         if(scrollTop>100){
-
             $('header').addClass('scroll');
 
         }else{
-
             $('header').removeClass('scroll');
             
         };
@@ -49,19 +47,22 @@ $(function(){
 
         if(scrollTop>200){
             $('#top').addClass('active');
+
         }else{
             $('#top').removeClass('active');
+
         };
-    });
 
-    $('#top').click(function(){   
-
-        var scrollTop=$(this).scrollTop();     
-
-        $('html, body').stop(true).animate({
-            scrollTop:0
+        $('#top').click(function(){   
+    
+            $('html, body').stop(true).animate({
+                scrollTop:0
+            });
         });
+
     });
+
+    
 
 
 
@@ -78,41 +79,45 @@ $(function(){
 
 
     // 상세페이지 팝업
-    $('.info').click(function(){  //팝업 Open 버튼 클릭 시 
+    $('.info').click(function(){  
         
-        $('.pop_bg').css('display','block'); //팝업 뒷배경 display block
-        $(this).parents('.pop_container').next('.pop').fadeIn(); //팝업창 display block
-        
-        $('body').css('overflow','hidden');//body 스크롤바 없애기
+        $('.pop_bg').css('display','block'); 
+        $(this).parents('.pop_container').next('.pop').fadeIn(); 
+        $('body').css('overflow','hidden');
     });
         
     $('.pop_close').click(function(){
 
-        $('.pop_bg').css('display','none'); //팝업창 뒷배경 display none
-        $('.pop').css('display','none'); //팝업창 display none
-        $('body').css('overflow','auto');//body 스크롤바 생성
+        $('.pop_bg').css('display','none'); 
+        $('.pop').css('display','none'); 
+        $('body').css('overflow','auto');
     });
+
 
 
     // 프로그레스 바
     $(window).scroll(function(){
         
         var scrollTop=$(this).scrollTop();
-        var skills=$('#skills').offset().top-200;
+        var skills=$('#skills').offset().top-500;
         
         if(scrollTop>=skills){
+
             $('.progress-bar').each(function(){
 
                 $(this).find('.bar').animate({
                     width:$(this).data('percent')
-                },2000)
-            })
+                },2000);
+
+            });
+
         }
-    })
+    });
 
 
-    // 팝업창 more 버튼
-    $('.pop .inner > a').not('.hollys .inner > a').click(function(e){
+
+    // 상세정보 준비 안내 창
+    $('.pop .inner > a').not('.hollys .inner > a, .pf .inner > a').click(function(e){
 
         e.preventDefault();
 
@@ -120,6 +125,6 @@ $(function(){
             $(this).delay(800).fadeOut();
         });
 
-    })
+    });
 
-})
+});
