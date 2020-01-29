@@ -117,7 +117,7 @@ $(function(){
 
 
     // 상세정보 준비 안내 창
-    $('.pop .inner > a').not('.hollys .inner > a, .pf .inner > a').click(function(e){
+    $('.muji .inner > a').click(function(e){
 
         e.preventDefault();
 
