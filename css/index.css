@@ -78,7 +78,7 @@ header.scroll{
     transform: translate(-50%,-50%);
     text-align: center;
 }
-#home .txt h1{
+#home .txt h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 45px;
     font-weight: 500;
@@ -131,7 +131,7 @@ header.scroll{
 article{
     margin-bottom: 200px;
 }
-article h2{
+article > h3{
     font-family: 'Montserrat', sans-serif;
     margin: 50px 70px;
     padding-bottom: 10px;
@@ -227,7 +227,7 @@ article h2{
     color: #666;
     line-height: 26px;
 }
-#about .box .motto h3{
+#about .box .motto h4{
     font-size: 18px;
     font-weight: bold;
     color: #e6b8a7;
@@ -423,18 +423,19 @@ article h2{
 #portfolio .fifth .circle3{
     background: #f7f7f7;
 }
-#portfolio .wrap h3{
+#portfolio .wrap h4{
     font-size: 24px;
 }
-#portfolio .wrap h3 span{
+#portfolio .wrap h4 span{
     color: #e6b8a7;
     font-size: 40px;
     font-weight: normal;
     padding-right: 10px;
     vertical-align: sub;
 }
-#portfolio .wrap h4{
+#portfolio .wrap h5{
     margin: 5px 0 20px 54px;
+    font-size: 15px;
 }
 #portfolio .wrap ul{
     margin: 0 0 25px 52px;
@@ -526,18 +527,18 @@ article h2{
     top: 18px;
     right: 18px;
 }
-#portfolio .pop .inner h3{
+#portfolio .pop .inner h4{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 35px;
 }
-#portfolio .pop .inner h3 span{
+#portfolio .pop .inner h4 span{
     font-size: 30px;
     color: #e6b8a7;
     margin-right: 7px;
     vertical-align: sub;
 }
-#portfolio .pop .inner h4{
+#portfolio .pop .inner h5{
     margin-bottom: 5px;
     font-size: 16px;
 }
