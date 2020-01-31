@@ -63,7 +63,7 @@ header.scroll{
 }
 
 
-/* home */
+/* 메인화면 */
 #home{
     background: url(../img/bg.jpg) no-repeat center center; 
     background-size: cover;
@@ -143,6 +143,7 @@ article > h3{
 }
 
 
+
 /* top버튼 */
 #top{
     position: fixed;
@@ -158,6 +159,7 @@ article > h3{
     opacity: 1;
     visibility: visible;
 }
+
 
 
 /* about me */
@@ -302,6 +304,7 @@ article > h3{
     font-weight: bold;
     font-size: 14px;
 }
+
 
 
 /* skills */
