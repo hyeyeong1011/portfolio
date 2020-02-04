@@ -230,17 +230,20 @@ article > h3{
     line-height: 26px;
 }
 #about .box .motto h4{
-    font-size: 18px;
-    font-weight: bold;
-    color: #e6b8a7;
+    font-size: 25px;
+    font-weight: normal;
+}
+#about .box .motto h4 span{
+    font-weight: 700;
+    border-bottom: 2px solid;
 }
 #about .box .motto p:first-of-type{
     color: #a6a6a6;
     font-size: 14px;
-    margin: 5px 0 20px;
+    margin-top: 25px;
 }
 #about .box .motto p:last-of-type{
-    line-height: 26px;
+    line-height: 30px;
     font-size: 14px;
     color: #666;
 }
