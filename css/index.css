@@ -597,6 +597,10 @@ article > h3{
     margin-right: 10px;
     color: #e6b8a7;
 }
+#contact ul li.blog{
+    margin-top: 50px;
+    font-size: 16px;
+}
 #contact p{
     text-align: center;
     color: #666;
