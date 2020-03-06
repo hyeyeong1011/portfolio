@@ -505,6 +505,15 @@ article > h3{
 #portfolio .fifth .circle3{
     background: #f7f7f7;
 }
+#portfolio .sixth .circle1{
+    background: #00ab33;
+}
+#portfolio .sixth .circle2{
+    background: #8974d7;
+}
+#portfolio .sixth .circle3{
+    background: #f2f4f7;
+}
 #portfolio .wrap h4{
     font-size: 24px;
 }
@@ -543,7 +552,7 @@ article > h3{
     margin: 20px 0 0 0;
 }
 #portfolio .second .txt-box a, .third .txt-box a, 
-.fourth .txt-box a, .fifth .txt-box a{
+.fourth .txt-box a, .fifth .txt-box a, .sixth .txt-box a{
     width: 70%;
     display: inline-block;
     box-sizing: border-box;
