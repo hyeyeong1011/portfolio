@@ -136,7 +136,7 @@ $(function(){
 
     
     // 상세정보 준비 안내 창
-    $('.muji .inner > a, .naver .inner > a').click(function(e){
+    $('.muji .inner > a').click(function(e){
 
         e.preventDefault();
 
